@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 import bg from '../../assets/backgound.jpg'
 import Card from '../../components/Card'
@@ -26,12 +27,24 @@ const Landing = () => {
           </div>
         </div>
         <div className="wrappercontent container mx-auto grid grid-cols-4 gap-10">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+          <Link to={'/detail'}>
+            <Card />
+          </Link>
+          <Link to={'/detail'}>
+            <Card />
+          </Link>
+          <Link to={'/detail'}>
+            <Card />
+          </Link>
+          <Link to={'/detail'}>
+            <Card />
+          </Link>
+          <Link to={'/detail'}>
+            <Card />
+          </Link>
+          <Link to={'/detail'}>
+            <Card />
+          </Link>
         </div>
         <div className="pagination flex my-16 w-max mx-auto">
           <button className='bg-gray-900 text-white text-xl py-2 px-10 rounded-lg mx-5'>Prev</button>

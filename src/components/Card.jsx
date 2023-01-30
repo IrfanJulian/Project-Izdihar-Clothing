@@ -7,7 +7,7 @@ const Card = () => {
     <div className="wrapperimg h-1/2">
       <img src={content1} alt="content" className='h-72 w-72' />
     </div>
-    <div className="wrapperdesc mt-10">
+    <div className="wrapperdesc my-5">
       <p className='text-xl font-semibold text-center'>PUNCTURE DISARRAY</p>
       <div className="grid py-3">
         <label htmlFor="size"></label>
