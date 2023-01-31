@@ -5,11 +5,14 @@ import wa from '../assets/wawhite.png'
 import ig from '../assets/igg.png'
 import fb from '../assets/fbb.png'
 import twitter from '../assets/twitterr.png'
+import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
-    <div className='bg-gray-900 pb-10'>
-        <div className="container flex mx-auto py-24">
+    <div className='bg-gray-900'>
+        <div className="container mx-auto py-14 border-r-4 border-l-4 border-white px-12">
+          <img src={logo} alt="logo" className='w-[10rem] h-[10rem] mx-auto' />
+          <div className="flex mt-14">
             <div className="w-4/12">
               <p className='text-2xl font-semibold text-white'>Contact Us:</p>
               <div className="line border-b-2 border-white w-1/2 my-5"></div>
@@ -58,8 +61,9 @@ const Footer = () => {
                   <p className='text-lg text-white'>Bukalapak</p>
                 </div>
             </div>
+          </div>
+        <p className='text-xl text-white text-center font-semibold mt-14'>Copyright © IZDR IZDIHAR. Reserved</p>
         </div>
-        <p className='text-xl text-white text-center font-semibold'>Copyright © IZDR IZDIHAR. Reserved</p>
     </div>
   )
 }

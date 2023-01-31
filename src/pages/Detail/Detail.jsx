@@ -26,8 +26,8 @@ const Detail = () => {
                 <p className='text-2xl font-bold mt-10'>Price :</p>
                 <div className="line w-1/4 border-b-2 border-black my-5"></div>
                 <p className='text-xl font-semibold text-red-500'>Rp. 169.000,00-</p>
+                <button></button>
             </div>
-              <button className='w-1/4 py-4 bg-gray-900 text-white rounded-xl mt-16 text-xl font-bold'>Buy Now</button>
         </div>
         <Footer />
     </div>
