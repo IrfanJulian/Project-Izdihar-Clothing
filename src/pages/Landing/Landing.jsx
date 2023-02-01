@@ -5,13 +5,15 @@ import bg from '../../assets/backgound.jpg'
 import Card from '../../components/Card'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
+import logo from '../../assets/logo 1 feb RAIL BLACK.png'
 
 const Landing = () => {
   return (
     <div className='h-screen'>
       <Navbar />
-      <div className="container mx-auto my-10">
-        <img src={bg} className='w-1/2 mx-auto rounded-xl' alt="" />
+      <div className="container mx-auto">
+        <img src={logo} alt="logo" className='h-[16rem] w-[16rem] mx-auto' />
+        <img src={bg} className='w-3/4 lg:w-1/2 mx-auto rounded-xl' alt="" />
       </div>
         <div className="wrappertittle">
           <div className="wrappercategory grid my-10">
@@ -26,10 +28,8 @@ const Landing = () => {
             </select>
           </div>
         </div>
-        <div className="wrappercontent container mx-auto grid grid-cols-4 gap-10">
-          <Link to={'/detail'}>
+        <div className="wrappercontent container mx-auto w-full lg:grid grid-cols-4 gap-10">
             <Card />
-          </Link>
           <Link to={'/detail'}>
             <Card />
           </Link>

@@ -3,7 +3,7 @@ import content1 from '../assets/puncture-1.jpg'
 
 const Card = () => {
   return (
-    <div className="card my-10 border-4 border-gray-300 rounded-xl w-max overflow-hidden">
+    <div className="card my-10 border-4 mx-auto border-gray-300 rounded-xl w-max overflow-hidden">
     <div className="wrapperimg h-1/2">
       <img src={content1} alt="content" className='h-72 w-72' />
     </div>

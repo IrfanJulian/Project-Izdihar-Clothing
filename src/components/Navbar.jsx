@@ -1,17 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
+import logoName from  '../assets/nama.png'
 
 const Navbar = () => {
   return (
     <div className='bg-gray-900'>
-        <div className="container mx-auto py-5 border-r-4 border-l-4 px-12">
-          <div className="mx-auto w-max flex">
-              <img src={logo} alt='logo' className='w-[5rem] h-[5rem] mr-5' />
-            <Link to={'/'} className='my-auto'>
-              <p className='text-white text-3xl font-bold my-auto'>IZDIHAR</p>
+        <div className="container mx-auto py-9 px-12 flex">
+          <div className="lg:w-2/12 w-full">
+            <Link to={'/'}>
+            <img src={logoName} className='sm:w-[10rem] h-[5rem]' alt="" />
             </Link>
-              <img src={logo} alt='logo' className='w-[5rem] h-[5rem] ml-5' />
+          </div>
+          <div className="wrapper lg:w-10/12 lg:mx-auto lg:grid sm:hidden md:hidden">
+            <Link to={'/'} className='my-auto w-3/4 ml-auto flex'>
+              <p className='text-white text-2xl font-semibold mx-auto'>Home</p>
+              <p className='text-white text-2xl font-semibold mx-auto'>About</p>
+              <p className='text-white text-2xl font-semibold mx-auto'>Contact</p>
+              <p className='text-white text-2xl font-semibold ml-auto'>Galery</p>
+            </Link>
           </div>
         </div>
     </div>
