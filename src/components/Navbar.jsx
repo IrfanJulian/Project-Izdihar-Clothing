@@ -11,7 +11,7 @@ const Navbar = () => {
             <img src={logoName} className='sm:w-[10rem] h-[5rem]' alt="" />
             </Link>
           </div>
-          <div className="wrapper lg:w-10/12 lg:mx-auto lg:grid sm:hidden md:hidden">
+          <div className="wrapper lg:w-10/12 lg:mx-auto lg:grid hidden">
             <Link to={'/'} className='my-auto w-3/4 ml-auto flex'>
               <p className='text-white text-2xl font-semibold mx-auto'>Home</p>
               <p className='text-white text-2xl font-semibold mx-auto'>About</p>
