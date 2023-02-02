@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="container mx-auto py-9 px-12 flex">
           <div className="lg:w-2/12 w-full">
             <Link to={'/'}>
-            <img src={logoName} className='w-[10rem] h-[5rem] mx-auto lg:w-full lg:h-full' alt="" />
+            <img src={logoName} className='w-[12rem] h-[5rem] mx-auto lg:w-full lg:h-full' alt="" />
             </Link>
           </div>
           <div className="wrapper lg:w-10/12 lg:mx-auto lg:grid hidden">

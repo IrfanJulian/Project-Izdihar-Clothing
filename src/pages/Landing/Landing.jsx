@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-// import { Link } from 'react-router-dom'
 import bg from '../../assets/backgound.jpg'
 import Card from '../../components/Card'
 import Footer from '../../components/Footer'
@@ -12,7 +10,7 @@ const Landing = () => {
     <div className='h-screen'>
       <Navbar />
       <div className="container mx-auto">
-        <img src={logo} alt="logo" className='h-[16rem] w-[16rem] mx-auto' />
+        <img src={logo} alt="logo" className='h-[13rem] w-[13rem] mx-auto' />
         <img src={bg} className='w-3/4 lg:w-1/2 mx-auto rounded-xl' alt="" />
       </div>
         <div className="wrappertittle">
@@ -30,21 +28,11 @@ const Landing = () => {
         </div>
         <div className="wrappercontent container mx-auto w-full lg:grid grid-cols-4 gap-10">
             <Card />
-          <Link to={'/detail'}>
             <Card />
-          </Link>
-          <Link to={'/detail'}>
             <Card />
-          </Link>
-          <Link to={'/detail'}>
             <Card />
-          </Link>
-          <Link to={'/detail'}>
             <Card />
-          </Link>
-          <Link to={'/detail'}>
             <Card />
-          </Link>
         </div>
         <div className="pagination flex my-16 w-max mx-auto">
           <button className='bg-gray-900 text-white text-xl py-2 px-10 rounded-lg mx-5'>Prev</button>
