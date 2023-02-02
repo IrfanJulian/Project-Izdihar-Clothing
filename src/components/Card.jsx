@@ -23,8 +23,8 @@ const Card = () => {
           <option className='text-sm' value="L">L</option>
           <option className='text-sm' value="XL">XL</option>
         </select>
-        <p className='text-sm lg:text-lg font-semibold ml-auto'>Price:</p>
-        <p className='text-sm lg:text-lg font-semibold text-red-500 mt-auto ml-3 mr-5'>Rp. 169.000</p>
+        <p className='text-sm my-auto lg:text-lg font-semibold ml-auto'>Price:</p>
+        <p className='text-sm my-auto lg:text-lg text-red-500 ml-1 mr-5'>Rp.169.000</p>
       </div>
     </div>
   </div>
