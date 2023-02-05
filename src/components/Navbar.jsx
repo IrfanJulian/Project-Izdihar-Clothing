@@ -17,7 +17,7 @@ const Navbar = () => {
             <img src={logoName} className='w-[12rem] h-[5rem] mx-auto lg:w-full lg:h-full' alt="" />
             </Link>
           </div>
-          <div className="absolute grid right-5 mt-6 buttn lg:hidden">
+          <div className="absolute grid right-7 mt-9 buttn lg:hidden">
             {active === false ?
               <button className='ml-auto' onClick={()=>setActive(true)}>
                 <img src={menu} alt="menu" className='w-[2rem] h-[2rem]' />
