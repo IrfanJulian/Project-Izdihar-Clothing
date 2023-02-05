@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import content1 from '../assets/puncture-1.jpg'
+// import content1 from '../assets/puncture-1.jpg'
 
 const Card = ({ tittle, price, size, photo }) => {
   return (

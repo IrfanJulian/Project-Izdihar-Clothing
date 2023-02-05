@@ -24,7 +24,7 @@ const Register = () => {
     const handleRegister = async(e) => {
         e.preventDefault()
         try {
-            await axios.post(`http://localhost:4444/user/register`, dataRegister)
+            await axios.post(`${process.env.REACT_APP_URL}/user/register`, dataRegister)
             Swal.fire({
                 icon: 'success',
                 title: 'Register Success',
