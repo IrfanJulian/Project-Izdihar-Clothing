@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="grid lg:flex mt-14">
             <div className="w-full mb-20 lg:w-4/12">
               <p className='text-xl lg:text-2xl font-semibold text-white'>Contact Us:</p>
-              <div className="line border-b-2 border-white w-1/2 my-5"></div>
+              <div className="line border-b-2 border-white w-1/2 my-3 lg:my-5"></div>
               <div className="flex w-max">
                 <img src={phone} className='w-[1rem] h-[1rem] lg:h-[1.5rem] lg:w-[1.5rem]' alt="phone" />
                 <p className='text-sm lg:text-lg text-white ml-5'>+6281-1223-344</p>
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="text-left w-full mb-20 lg:w-4/12 lg:text-center">
               <p className='text-xl lg:text-2xl font-semibold text-white'>Follow Us:</p>
-              <div className="line border-b-2 border-white w-1/2 my-5 mr-auto lg:mx-auto"></div>
+              <div className="line border-b-2 border-white w-1/2 my-3 lg:my-5 mr-auto lg:mx-auto"></div>
               <div className="flex mt-5 w-max mr-auto lg:mx-auto">
                 <img src={ig} className='w-[1rem] h-[1rem] lg:h-[1.5rem] lg:w-[1.5rem]' alt="phone" />
                 <p className='text-sm lg:text-lg text-white ml-5'>@robbydarwis</p>
@@ -48,9 +48,9 @@ const Footer = () => {
                 <p className='text-sm lg:text-lg text-white ml-5'>@robbydarwis</p>
               </div>
             </div>
-            <div className="w-full mb-20 lg:w-4/12 text-left">
+            <div className="w-full mb-10 lg:w-4/12 text-left">
               <p className='text-xl lg:text-2xl font-semibold text-white'>Our Store:</p>
-              <div className="line border-b-2 border-white w-1/2 my-5 mr-auto lg:ml-auto"></div>
+              <div className="line border-b-2 border-white w-1/2 my-3 lg:my-5 mr-auto lg:ml-auto"></div>
                 <div className="flex w-max me-auto lg:ml-auto">
                   <p className='text-sm lg:text-lg text-white ml-5'>Tokopedia</p>
                 </div>
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </div>
           </div>
-        <p className='text-md lg:text-xl text-white text-center font-semibold mt-14'>Copyright © IZDR IZDIHAR. Reserved</p>
+        <p className='text-md lg:text-xl text-white text-center font-semibold mt-4'>Copyright © IZDR IZDIHAR. Reserved</p>
         </div>
     </div>
   )
