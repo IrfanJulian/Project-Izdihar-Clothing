@@ -22,7 +22,7 @@ const Login = () => {
     const handleLogin = async(e) => {
       e.preventDefault()
       try{
-        const res = await axios.post(`http://localhost:4444/user/login`, data)
+        const res = await axios.post(`${process.env.REACT_APP_URL}/user/login`, data)
         localStorage.setItem('id', res.data.data.id)
         localStorage.setItem('token', res.data.data.token)
         localStorage.setItem('photo', res.data.data.photo)

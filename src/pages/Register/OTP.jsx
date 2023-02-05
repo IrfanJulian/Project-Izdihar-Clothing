@@ -16,7 +16,7 @@ const OTP = () => {
         try{
             await axios({
                 method: "PUT",
-                url: `http://localhost:4444/user/${email}`,
+                url: `${process.env.REACT_APP_URL}/${email}`,
                 data: {
                     otp
                 }
