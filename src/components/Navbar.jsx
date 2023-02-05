@@ -11,13 +11,13 @@ const Navbar = () => {
 
   return (
     <div className='bg-gray-900'>
-        <div className="lg:container mx-auto py-9 px-7 flex">
+        <div className="container mx-auto py-9 px-9 flex">
           <div className="lg:w-2/12 w-full">
             <Link to={'/'}>
             <img src={logoName} className='w-[12rem] h-[5rem] mx-auto lg:w-full lg:h-full' alt="" />
             </Link>
           </div>
-          <div className="absolute grid right-10 mt-6 buttn lg:hidden">
+          <div className="absolute grid right-5 mt-6 buttn lg:hidden">
             {active === false ?
               <button className='ml-auto' onClick={()=>setActive(true)}>
                 <img src={menu} alt="menu" className='w-[2rem] h-[2rem]' />
