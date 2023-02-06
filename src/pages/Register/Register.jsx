@@ -23,20 +23,28 @@ const Register = () => {
 
     const handleRegister = async(e) => {
         e.preventDefault()
-        try {
-            await axios.post(`${process.env.REACT_APP_URL}/user/register`, dataRegister)
-            Swal.fire({
-                icon: 'success',
-                title: 'Register Success',
-                text: 'Please check your email to get OTP'
-              })
-            navigate(`/otp`)
-        } catch (error) {
+        if(dataRegister.password.length <= 7){
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Something went wrong!'
+                text: 'Password must be min 8 character or more...'
               })
+        }else{
+            try {
+                await axios.post(`${process.env.REACT_APP_URL}/user/register`, dataRegister)
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Register Success',
+                    text: 'Please check your email to get OTP'
+                  })
+                navigate(`/otp`)
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!'
+                  })
+            }
         }
     }
 
