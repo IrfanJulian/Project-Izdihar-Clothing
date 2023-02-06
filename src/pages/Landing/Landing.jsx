@@ -43,13 +43,13 @@ const Landing = () => {
             </select>
           </div>
         </div>
+        <div className="wrappercontent container mx-auto w-full lg:grid grid-cols-4 gap-3">
         { data ? data.map((item)=>
-        <div key={item.id} className="wrappercontent container mx-auto w-full lg:grid grid-cols-4 gap-10">
             <Card tittle={item.name} price={item.price} size={item.size} photo={item.photo} />
-        </div>
-        ):
+            ):
             <Card />
         }  
+        </div>
         <div className="pagination flex my-16 w-max mx-auto">
           <button className='bg-gray-900 text-white text-xl py-2 px-10 rounded-lg mx-5'>Prev</button>
           <p className='text-xl font-bold text-gray-900 my-auto'>1/5</p>

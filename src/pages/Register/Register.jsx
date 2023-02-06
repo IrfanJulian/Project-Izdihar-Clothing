@@ -42,9 +42,9 @@ const Register = () => {
 
   return (
             <div className='bg-gray-900 pb-10 grid h-screen'>
-                <div className="container py-5 my-auto">
-                    <img src={logo} alt="logo" className='w-1/2 h-1/2 mx-auto my-8' />
-                    <form onSubmit={handleRegister} className='px-10'>
+                <div className="lg:container lg:mx-auto py-5 my-auto">
+                    <img src={logo} alt="logo" className='w-1/2 h-1/2 mx-auto lg:h-1/4 lg:w-1/4 my-8' />
+                    <form onSubmit={handleRegister} className='px-10 lg:w-1/2 lg:mx-auto'>
                         <p className='text-md text-white'>Name</p>
                         <input name='name' value={dataRegister.name} onChange={handleChange} type="text" className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
                         <p className='text-md text-white'>Email</p>

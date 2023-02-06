@@ -6,8 +6,14 @@ import close from '../assets/close.png'
 
 const Navbar = () => {
 
+  const token = localStorage.getItem('token')
   const [active, setActive] = useState(false)
   const navigate = useNavigate()
+
+  const handleLogout = () => {
+    localStorage.clear()
+    navigate('/login')
+  }
 
   return (
     <div className='bg-gray-900'>
@@ -27,21 +33,26 @@ const Navbar = () => {
                 <img src={close} alt="menu" className='w-[2rem] h-[2rem]' />
               </button>        
             }
-            {active === true ?
+            { active === true ?
             <div className="content grid border-4 mt-4 w-[10rem] rounded-lg py-2 px-4 bg-white border-gray-900">
               <button className='text-xl font-semibold p-2 text-right bg-transparent focus:bg-gray-300'>Home</button>
               <button className='text-xl font-semibold p-2 text-right bg-transparent focus:bg-gray-300'>About</button>
               <button className='text-xl font-semibold p-2 text-right bg-transparent focus:bg-gray-300'>Galery</button>
-              <button onClick={()=>navigate('/login')} className='text-xl font-semibold p-2 text-gray-400 text-right bg-transparent focus:bg-gray-300'>Login</button>
+              { token ?
+              <button onClick={handleLogout} className='text-xl font-semibold p-2 text-red-600 text-right bg-transparent focus:bg-gray-300'>Logout</button>
+              :
+              <button onClick={()=>navigate('/login')} className='text-xl font-semibold p-2 text-red-600 text-right bg-transparent focus:bg-gray-300'>Login</button>
+              }
             </div>
-            : null}
+            :  null }
           </div>
           <div className="wrapper lg:w-10/12 lg:mx-auto lg:grid hidden">
             <Link to={'/'} className='my-auto w-3/4 ml-auto flex'>
               <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>Home</Link></p>
               <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>About</Link></p>
               <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>Contact</Link></p>
-              <p className='text-white text-2xl font-semibold ml-auto'><Link to={'/landing'}>Galery</Link></p>
+              <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>Galery</Link></p>
+              <p className='text-white text-2xl font-semibold ml-auto'><Link to={'/login'}>Login</Link></p>
               {/* <p className='text-gray-300 text-2xl font-semibold ml-auto'><Link to={'/login'}>Login</Link></p> */}
             </Link>
           </div>
