@@ -7,6 +7,7 @@ import logo from '../../assets/nama.png'
 const Register = () => {
 
     const navigate = useNavigate()
+    const [showPass, setShowPass] = useState(false)
     const [dataRegister, setDataRegister] = useState({
         name: '',
         email: '',
@@ -58,7 +59,14 @@ const Register = () => {
                         <p className='text-md text-white'>Email</p>
                         <input name='email' value={dataRegister.email} onChange={handleChange} type="email" className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
                         <p className='text-md text-white'>Password</p>
-                        <input name='password' value={dataRegister.password} onChange={handleChange} type="password" className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
+                        <div className="flex">   
+                        <input name='password' value={dataRegister.password} onChange={handleChange} type={showPass === true ? "text" : "password"} className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
+                        { showPass === false ? 
+                            <button type='button' className='font-bold bg-white h-max my-auto px-2 py-2' onClick={()=>setShowPass(true)}>Show</button>
+                            :
+                            <button type='button' className='font-bold bg-white h-max my-auto px-2 py-2' onClick={()=>setShowPass(false)}>Hide</button>
+                        }
+                        </div>
                         <p className='text-md text-white'>Phone Number</p>
                         <input name='phone_number' value={dataRegister.phone_number} onChange={handleChange} type="number" className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
                         <button type='submit' className='text-gray-900 border-2 bg-white rounded-lg w-full py-2 text-xl font-bold mt-10'>Register</button>

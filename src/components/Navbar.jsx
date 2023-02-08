@@ -38,6 +38,7 @@ const Navbar = () => {
               <button className='text-xl font-semibold p-2 text-right bg-transparent focus:bg-gray-300'>Home</button>
               <button className='text-xl font-semibold p-2 text-right bg-transparent focus:bg-gray-300'>About</button>
               <button className='text-xl font-semibold p-2 text-right bg-transparent focus:bg-gray-300'>Galery</button>
+              <button onClick={()=>navigate('/cart')} className='text-xl font-semibold p-2 text-right bg-transparent focus:bg-gray-300'>Cart</button>
               { token ?
               <button onClick={handleLogout} className='text-xl font-semibold p-2 text-red-600 text-right bg-transparent focus:bg-gray-300'>Logout</button>
               :

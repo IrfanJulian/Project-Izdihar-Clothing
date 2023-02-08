@@ -45,7 +45,7 @@ const Landing = () => {
         </div>
         <div className="wrappercontent container mx-auto w-full lg:grid grid-cols-4 gap-3">
         { data ? data.map((item)=>
-            <Card tittle={item.name} price={item.price} size={item.size} photo={item.photo} />
+            <Card id={item.id} tittle={item.name} price={item.price} size={item.size} photo={item.photo} />
             ):
             <Card />
         }  

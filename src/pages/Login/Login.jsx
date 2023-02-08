@@ -7,6 +7,7 @@ import logo from '../../assets/nama.png'
 const Login = () => {
 
     const navigate = useNavigate()
+    const [showPass, setShowPass] = useState(false)
     const [data, setData] = useState({
       email: '',
       password: ''
@@ -51,7 +52,14 @@ const Login = () => {
                 <p className='text-md text-white'>Email</p>
                 <input type="email" name='email' value={data.email} onChange={handleChange} className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
                 <p className='text-md text-white'>Password</p>
-                <input type="password" name='password' value={data.password} onChange={handleChange} className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
+                <div className="flex">   
+                <input type={showPass === true ? "text" : "password"} name='password' value={data.password} onChange={handleChange} className='py-2 px-4 text-sm font-semibold outline-none border-2 my-3 w-full' />
+                  { showPass === false ? 
+                    <button type='button' className='font-bold bg-white h-max my-auto px-2 py-2' onClick={()=>setShowPass(true)}>Show</button>
+                    :
+                    <button type='button' className='font-bold bg-white h-max my-auto px-2 py-2' onClick={()=>setShowPass(false)}>Hide</button>
+                  }
+                </div>
                 <p className='text-md text-white text-right my-3'>Forgot Password?</p>
                 <button type='submit' className='text-gray-900 border-2 bg-white rounded-lg w-full py-2 text-xl font-bold mt-5'>Login</button>
             </form>

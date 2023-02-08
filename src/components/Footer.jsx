@@ -48,7 +48,7 @@ const Footer = () => {
                 <p className='text-sm lg:text-lg text-white ml-5'>@robbydarwis</p>
               </div>
             </div>
-            <div className="w-full mb-10 lg:w-4/12 text-left">
+            <div className="w-full mb-10 lg:w-4/12 text-left lg:text-right">
               <p className='text-xl lg:text-2xl font-semibold text-white'>Our Store:</p>
               <div className="line border-b-2 border-white w-1/2 my-3 lg:my-5 mr-auto lg:ml-auto"></div>
                 <div className="flex w-max me-auto lg:ml-auto">
