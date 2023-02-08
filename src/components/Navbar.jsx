@@ -48,6 +48,16 @@ const Navbar = () => {
             :  null }
           </div>
           <div className="wrapper lg:w-10/12 lg:mx-auto lg:grid hidden">
+            {token ? 
+            <Link to={'/'} className='my-auto w-3/4 ml-auto flex'>
+              <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>Home</Link></p>
+              <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>About</Link></p>
+              <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>Contact</Link></p>
+              <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>Galery</Link></p>
+              <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/cart'}>Cart</Link></p>
+              <p className='text-white text-2xl font-semibold ml-auto'><Link to={'/login'}>Logout</Link></p>
+              {/* <p className='text-gray-300 text-2xl font-semibold ml-auto'><Link to={'/login'}>Login</Link></p> */}
+            </Link>:
             <Link to={'/'} className='my-auto w-3/4 ml-auto flex'>
               <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>Home</Link></p>
               <p className='text-white text-2xl font-semibold mx-auto'><Link to={'/landing'}>About</Link></p>
@@ -56,6 +66,7 @@ const Navbar = () => {
               <p className='text-white text-2xl font-semibold ml-auto'><Link to={'/login'}>Login</Link></p>
               {/* <p className='text-gray-300 text-2xl font-semibold ml-auto'><Link to={'/login'}>Login</Link></p> */}
             </Link>
+            }
           </div>
         </div>
     </div>
