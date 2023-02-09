@@ -19,16 +19,16 @@ const Footer = () => {
               <div className="line border-b-2 border-white w-1/2 my-3 lg:my-5"></div>
               <div className="flex w-max">
                 <img src={phone} className='w-[1rem] h-[1rem] lg:h-[1.5rem] lg:w-[1.5rem]' alt="phone" />
-                <p className='text-sm lg:text-lg text-white ml-5'>+6281-1223-344</p>
+                <p className='text-sm lg:text-lg text-white ml-5'>+62896-9036-1996</p>
               </div>
               <div className="flex mt-5 w-max">
                 <img src={email} className='w-[1rem] h-[1rem] lg:h-[1.5rem] lg:w-[1.5rem]' alt="phone" />
-                <p className='text-sm lg:text-lg text-white ml-5'>Robbydarwis@gmail.com</p>
+                <p className='text-sm lg:text-lg text-white ml-5'>izdihar5513@gmail.com</p>
               </div>
               <div className="mt-5 w-max">
                 <Link to={'https://wa.link/6y0gga'} className='flex'>
                 <img src={wa} className='w-[1rem] h-[1rem] lg:h-[1.5rem] lg:w-[1.5rem]' alt="phone" />
-                <p className='text-sm lg:text-lg text-white ml-5'>+62821-1996-5025</p>
+                <p className='text-sm lg:text-lg text-white ml-5'>+62896-9036-1996</p>
                 </Link>
               </div>
             </div>
