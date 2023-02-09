@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Izdihar Clothing Projrct
+![](https://res.cloudinary.com/ddpo9zxts/image/upload/v1673453253/Untitled-2_omh8sc.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### About Izdihar Clothing Project
+Izdihar Clothing Project is Website local brand fashion from Bandung Indonesia. In this application you can see izdihar collection and if you interesting you can shopping here.
 
-## Available Scripts
+## Table Of Content
+- [API-Reference](#API-Reference)
+- [Getting-Started](#Getting-Started)
+- [Built-With](#Built-With)
+- [Demo](#Demo)
+- [Screenshot](#Screenshot)
+- [Created by](#Created)
 
-In the project directory, you can run:
+## API-Reference
+Github Repository: [Izdhiar Clothing Project](https://github.com/IrfanJulian/Project-Izdihar-Clothing-API.git)
 
-### `npm start`
+## Getting-Started
+### Installation
+Clone the application using npm :
+```bash
+git clone https://github.com/IrfanJulian/Project-Izdihar-Clothing.git
+```
+Install this application using npm :
+```bash
+npm Install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built-With
+- [React JS](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Nodemailer](https://nodemailer.com/)
+- [React router dom](https://reactrouter.com/en/main)
+- [Axios](https://axios-http.com/docs/intro)
+- [Sweet Alert](https://sweetalert2.github.io/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
+https://izdihar-clotihng.vercel.app/
 
-### `npm test`
+## Screenshot
+## Dekstop View
+### Landing Page
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230208_010853.png)
+### Authentication Register
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_053639.png)
+### Authentication OTP
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_053731.png)
+### Authentication Login
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_053809.png)
+### Detail Product Page
+![](https://res.cloudinary.com/ddpo9zxts/image/upload/v1675943363/Screenshot_20230209_064628_cnzkf2.png)
+### Cart Page
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_055200.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Mobile View
+### Landing Page
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_053857.png)
+### Authentication Register
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_053659.png)
+### Authentication OTP
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_053747.png)
+### Authentication Login
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_053824.png)
+### Detail Product Page
+![](https://res.cloudinary.com/ddpo9zxts/image/upload/v1675943363/Screenshot_20230209_064708_m1gsah.png)
+### Cart Page
+![](https://github.com/IrfanJulian/Project-Izdihar-Clothing/blob/main/src/assets/screenhots/Screenshot_20230209_055216.png)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Created
+© [Irfan Julian](https://github.com/IrfanJulian)
