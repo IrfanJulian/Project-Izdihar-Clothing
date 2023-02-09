@@ -7,6 +7,7 @@ import Navbar from '../../components/Navbar'
 const Cart = () => {
 
     const [data, setData] = useState()
+    const [qty, setQty] = useState(1)
     const token = localStorage.getItem('token')
     const id = localStorage.getItem('id')
 
@@ -25,6 +26,14 @@ const Cart = () => {
     }, [id, token])
     console.log(data)
 
+    const handleInc = () => {
+        setQty((crnt)=>crnt + 1)
+    }
+    
+    const handleDec = () => {
+        setQty((crnt)=>crnt - 1)
+    }
+
   return (
     <div>
         <Navbar />
@@ -32,7 +41,7 @@ const Cart = () => {
         {data ?
         <div className='pb-5 px-9'>
             { data.length !== 0 ? data.map((cart)=>
-            <CartList photo={cart.photo} name={cart.name} qty={cart.qty} total_price={cart.total_price} />
+            <CartList photo={cart.photo} name={cart.name} qty={qty} total_price={cart.total_price * qty} click={handleDec} click2={handleInc} />
             )
             :
             <p className='text-2xl text-gray-900 font-semibold text-center my-20'>Add some items to your bag</p>

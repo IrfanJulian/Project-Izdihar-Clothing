@@ -38,7 +38,7 @@ const OTP = () => {
     }
 
  return(
-    <div className="bg-gray-900 grid py-10 h-screen">
+    <div className="bg-gray-900 grid py-10 h-full">
         <div className="lg:container mx-auto my-auto">
             <img src={logo} alt="logo" className="w-3/4 h-3/4 lg:h-1/4 lg:w-1/4 mx-auto mb-10" />
             <form action="" className="grid px-10 lg:w-1/2 lg:mx-auto">
