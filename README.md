@@ -1,5 +1,5 @@
-# Izdihar Clothing Projrct
-![](https://res.cloudinary.com/ddpo9zxts/image/upload/v1673453253/Untitled-2_omh8sc.png)
+# Izdihar Clothing Project
+![](https://res.cloudinary.com/ddpo9zxts/image/upload/v1675943774/tittle_dgbgjv.png)
 
 ### About Izdihar Clothing Project
 Izdihar Clothing Project is Website local brand fashion from Bandung Indonesia. In this application you can see izdihar collection and if you interesting you can shopping here.
