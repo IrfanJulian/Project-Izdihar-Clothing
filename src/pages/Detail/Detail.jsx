@@ -28,36 +28,47 @@ const Detail = () => {
   }, [id])
 
   const handleAdd = async (e) => {
-    e.preventDefault()
-    Swal.fire({
-      title: 'Are you want add this item to cart?',
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes'
-    }).then(async(result) => {
-      if (result.isConfirmed) {
-        await axios({
-          method: 'POST',
-          url: `http://localhost:4500/mybag`,
-          data: {
-            id_product: id,
-            id_user: idUser,
-            qty: 1,
-            total_price: price
-          },
-          headers: {
-            Authorization: `Bearer ${token}`
-          }
-        })
-        Swal.fire(
-          'Add to cart success!',
-          'Your item now in your cart',
-          'success'
-        )
-      }
-    })
+    if(token){
+      e.preventDefault()
+      Swal.fire({
+        title: 'Are you want add this item to cart?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes'
+      }).then(async(result) => {
+        if (result.isConfirmed) {
+          await axios({
+            method: 'POST',
+            url: `http://localhost:4500/mybag/addCart`,
+            data: {
+              id_product: parseInt(id),
+              id_user: idUser,
+              qty: 1,
+              total_price: price
+            }
+          })
+          Swal.fire(
+            'Add to cart success!',
+            'Your item now in your cart',
+            'success'
+          )
+        }else{
+          Swal.fire(
+            'Error!',
+            'Something wrong',
+            'error'
+          )
+        }
+      })
+    }else{
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You can login to add this item to your cart'
+      })
+    }
   }
 
   return (
